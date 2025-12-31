@@ -75,3 +75,14 @@ input {
     font-size: 18px;
     margin: 5px 0;
 }
+
+.resultado a {
+    text-decoration: none;
+    color: #00e5e5;
+    transition: color 0.3s ease;
+}
+
+.resultado a:hover {
+    color: #015757;
+    text-underline-offset: 4px;
+}

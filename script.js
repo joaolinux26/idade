@@ -16,12 +16,12 @@ botao.addEventListener('click', () => {
 
         const nacimento = new Date().getFullYear() - idade
 
-        const maiorDeiade = idade >= 18 ? 'Maior de idade' : 'Menor de idade';
+        const maiorDeiade = idade >= 18 ? 'Maior de idade ✅, ir para o <a href="https://joaopedrooliveira.vercel.app/" target="_blank">João Pedro Web</a> ' : '🔞Menor de idade ';
 
         resultado.innerHTML = `
-        <p>Ola ${nome}! voce tem ${idade} anos </p> 
+        <p>🙋🏻Ola ${nome}! voce tem ${idade} anos </p> 
         <p>Voce e ${maiorDeiade}</p>
-        <p>Voce nasceu em ${nacimento}</p>
+        <p>📅Voce nasceu em ${nacimento}</p>
         `
     }
 
