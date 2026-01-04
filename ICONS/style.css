@@ -1,0 +1,71 @@
+body {
+    background-color: #1e1e2e; /* Fundo escuro moderno */
+    color: #cdd6f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo base para os ícones (assumindo que são elementos com IDs) */
+[id^="icon"] {
+    font-size: 3rem; /* Ícones grandes */
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave */
+    opacity: 0.5;
+}
+
+[id^="icon"]:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+/* Classe 'active' que o JS vai adicionar */
+.active {
+    opacity: 1 !important;
+    color: #89b4fa; /* Azul claro */
+    text-shadow: 0 0 20px rgba(137, 180, 250, 0.6); /* Efeito de brilho neon */
+    transform: scale(1.2) translateY(-10px) !important;
+}
+
+#resultado {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+/* Estilização dos inputs e botão */
+input {
+    background-color: #313244;
+    border: 2px solid #45475a;
+    border-radius: 8px;
+    color: #cdd6f4;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #89b4fa;
+}
+
+button {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
